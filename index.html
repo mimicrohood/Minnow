@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang=en>
+<head>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width,initial-scale=1>
+<title>Minnow &mdash; Market narratives, launched onchain</title>
+<meta name='description' content='An onchain launch protocol for community tokens inspired by market narratives.'>
+<link rel=icon href=Minnow.png>
+<link rel='preconnect' href='https://fonts.googleapis.com'>
+<link href='https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap' rel='stylesheet'>
+<link rel=stylesheet href=styles.css>
+<link rel='stylesheet' href='enhancements.css'>
+</head>
+<body>
+<header>
+  <a class='brand' href='#top'><i><img src='Minnow.png' alt=''></i><b>Minnow</b></a>
+  <nav><a href='#overview' class='on'>Overview</a><a href='#model'>Protocol</a><a href='launch.html'>Launch</a><a href='#faq'>FAQ</a></nav>
+  <div class='actions'><span class='network'><i></i>Designed for Robinhood Chain</span><a href='#' id='connect-wallet' class='btn dark small'>Connect Wallet</a><a href='https://x.com/minnowhood' target='_blank' rel='noopener' class='social-link' title='Follow on X'>𝕏</a></div>
+</header>
+<main id=top>
+<section class='hero'>
+  <div class='glow'></div><img class='hero-logo' src='Minnow.png' alt='Minnow pickaxe'>
+  <div class='eyebrow center'>An onchain community-token protocol</div>
+  <h1>Mine the story.<br><mark>Build the current.</mark></h1>
+  <p>Minnow gives creators a transparent way to launch community tokens around market narratives - and gives everyone else one place to understand the rules, follow the market and participate onchain.</p>
+  <div class='ctas'><a class='btn dark' href='launch.html'>Launch a token</a><a class='btn' href='#overview'>Learn More</a></div>
+  <div class='contract-box' id='contract-box'>
+    <div class='contract-label'>Token Contract Address</div>
+    <div class='contract-address' id='contract-address'>
+      <span class='placeholder'>Contract address will be announced after launch</span>
+    </div>
+    <button class='copy-btn' id='copy-btn' style='display:none'>Copy</button>
+  </div>
+  <div class='truth-strip' id='status'><span><b>PROTOCOL</b> Community-token launches</span><span><b>NETWORK</b> Robinhood Chain</span><span><b>FLOW</b> Narrative to market</span></div>
+</section>
+<section class='alt' id='overview'><div class='wrap overview-grid'>
+  <div><div class='eyebrow'>Minnow in plain English</div><h2>A launch protocol for market-narrative communities.</h2></div>
+  <div class='lead-copy'><p>A creator starts with a thesis: a technology, sector or public-market story that a community wants to gather around. Minnow is designed to turn that thesis into an independently issued community token with visible launch terms.</p><p>After launch, participants can inspect the token, follow the mine's onchain state and decide whether to contribute tokens or liquidity under its published rules.</p></div>
+</div><div class='wrap boundary-grid'>
+  <article class='boundary yes'><small>WHAT IT IS</small><h3>An open coordination layer</h3><ul><li>Discover community-led market narratives</li><li>Launch tokens with terms visible up front</li><li>Coordinate token and liquidity incentives</li><li>Keep a public record of every mine</li></ul></article>
+  <article class='boundary no'><small>WHAT IT IS NOT</small><h3>Not a brokerage or stock product</h3><ul><li>No ownership in a referenced company</li><li>No dividends or shareholder rights</li><li>No promise that a token will gain value</li><li>No company affiliation implied</li></ul></article>
+</div></section>
+<section id='model'><div class='wrap'>
+  <div class='head split'><div><div class='eyebrow'>One protocol, three layers</div><h2>From an idea to an onchain community.</h2></div><p>Each layer answers a different question: what is the community gathering around, how does the token begin, and how do people participate?</p></div>
+  <div class='layer-grid'><article><span>01 / DISCOVER</span><div class='layer-icon'>01</div><h3>Find the narrative</h3><p>Inspect the thesis, creator disclosures, proposed rules and risks before taking action.</p></article><article><span>02 / LAUNCH</span><div class='layer-icon'>02</div><h3>Open the mine</h3><p>Creators define the token configuration, supply, allocations and participation conditions.</p></article><article><span>03 / PARTICIPATE</span><div class='layer-icon'>03</div><h3>Grow the current</h3><p>Participants follow the onchain state and join under the same published rules.</p></article></div>
+</div></section>
+<section class='alt' id='language'><div class='wrap terminology'>
+  <div class='term-intro'><div class='eyebrow'>Speak Minnow</div><h2>The protocol language, decoded.</h2><p>The mining vocabulary describes the protocol's participation model. It does not refer to physical mining hardware.</p></div>
+  <dl><div><dt>Mine</dt><dd>A community-token launch and its participation program.</dd></div><div><dt>Ore</dt><dd>The reward reserve allocated under published rules.</dd></div><div><dt>Hashpower</dt><dd>A proposed score for eligible participation weight.</dd></div><div><dt>Graduation</dt><dd>Completion of the conditions disclosed at launch.</dd></div></dl>
+</div></section>
+<section id='journey'><div class='wrap'>
+  <div class='head'><div class='eyebrow'>How a mine moves</div><h2>Every step should be visible.</h2><p>This is the intended lifecycle. Final mechanics will be published with the protocol specification.</p></div>
+  <div class='steps'><div><span>01</span><h3>Publish the thesis</h3><p>Explain the narrative, creator identity, disclosures and risks.</p></div><div><span>02</span><h3>Set the rules</h3><p>Define supply, allocations, fees, liquidity and completion conditions.</p></div><div><span>03</span><h3>Launch onchain</h3><p>Deploy the token and mine configuration through published contracts.</p></div><div><span>04</span><h3>Open participation</h3><p>Users inspect the terms and decide independently whether to join.</p></div><div><span>05</span><h3>Complete the mine</h3><p>The lifecycle ends only under the conditions disclosed at launch.</p></div></div>
+</div></section>
+<section class='alt roadmap'><div class='wrap'><div class='head split'><div><div class='eyebrow'>Protocol architecture</div><h2>One flow, clearly defined.</h2></div><p>Every launch is organized around the information creators and participants need to make informed decisions.</p></div><div class='roadmap-grid'><article class='done'><span>01 / DISCOVER</span><h3>Narrative registry</h3><p>Thesis, category, creator identity and disclosures.</p></article><article><span>02 / LAUNCH</span><h3>Token factory</h3><p>Supply, allocations, permissions and launch rules.</p></article><article><span>03 / PARTICIPATE</span><h3>Participation accounting</h3><p>Published eligibility and transparent reward logic.</p></article><article><span>04 / COMPLETE</span><h3>Lifecycle records</h3><p>Onchain progress and completion conditions.</p></article></div></div></section>
+<section id='faq'><div class='wrap faq-grid'><div><div class='eyebrow'>Questions, answered</div><h2>Before you follow the current.</h2></div><div class='faqs'>
+  <details open><summary>What is Minnow?</summary><p>An onchain protocol for launching and participating in community tokens organized around market narratives.</p></details>
+  <details><summary>Who uses Launch?</summary><p>Creators, communities and project teams use it to define the narrative, token, allocation, liquidity plan and disclosures.</p></details>
+  <details><summary>Is a Minnow token a stock?</summary><p>No. It provides no equity, dividends, voting rights, revenue rights or claim on a company.</p></details>
+  <details><summary>How do I participate?</summary><p>Connect a wallet, review the mine terms and participate under the published token and liquidity rules.</p></details>
+  <details><summary>What will I see on a mine page?</summary><p>The narrative, creator disclosures, token configuration, participation rules, liquidity conditions and onchain lifecycle state.</p></details>
+  <details><summary>Is participation risk-free?</summary><p>No. Community tokens can lose all value. Contract, liquidity, regulatory and creator risks may apply.</p></details>
+</div></div></section>
+<section class='closing'><img src='Minnow.png' alt=''><div class='eyebrow center'>Built for clarity before hype</div><h2>Small fish.<br><mark>Clear waters.</mark></h2><p>Verified links, contract addresses and live data will appear only when they exist.</p><a class='btn dark' href='launch.html'>See how launching works</a></section>
+</main>
+<footer><div class='wrap footer-grid'><div><a class='brand' href='#top'><i><img src='Minnow.png' alt=''></i><b>Minnow</b></a><p>Market narratives, launched onchain.</p></div><div><b>LEARN</b><a href='#overview'>Overview</a><a href='#model'>Protocol</a><a href='launch.html'>Launch</a><a href='#faq'>FAQ</a></div><div><b>PROTOCOL</b><span>Creator launch studio</span><span>Community-token markets</span><span>Robinhood Chain</span></div></div><div class='wrap legal'>© 2026 Minnow <span>Community tokens are speculative and do not represent stocks, equity or claims on companies.</span></div></footer><script src='wallet.js'></script>
+<script src='app.js'></script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>Launch a token - Minnow</title>
+<meta name='description' content='Define a community-token launch with clear narrative, token, liquidity and disclosure terms.'>
+<link rel='icon' href='Minnow.png'>
+<link rel='preconnect' href='https://fonts.googleapis.com'>
+<link href='https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap' rel='stylesheet'>
+<link rel='stylesheet' href='styles.css'>
+<link rel='stylesheet' href='enhancements.css'>
+</head>
+<body class='launch-page'>
+<header>
+<a class='brand' href='index.html'>
+<i>
+<img src='Minnow.png' alt=''>
+</i>
+<b>Minnow</b>
+</a>
+<nav>
+<a href='index.html#overview'>Overview</a>
+<a href='index.html#model'>Protocol</a>
+<a href='launch.html' class='on'>Launch</a>
+<a href='index.html#faq'>FAQ</a>
+</nav>
+<div class='actions'>
+<a href='#' id='connect-wallet' class='btn dark small'>Connect Wallet</a>
+<a href='https://x.com/minnowhood' target='_blank' rel='noopener' class='social-link' title='Follow on X'>𝕏</a>
+</div>
+</header>
+<main>
+<section class='launch-hero'>
+<div class='wrap'>
+<a class='back-link' href='index.html'>&larr; Back to Minnow</a>
+<div class='launch-intro'>
+<div>
+<div class='eyebrow'>Creator launch studio</div>
+<h1>Turn a thesis into a transparent token launch.</h1>
+</div>
+<p>Launch is for creators, communities and project teams. Define the narrative, token rules, allocation and liquidity plan in one guided flow - with the important terms visible before anyone participates.</p>
+</div>
+<div class='notice'>
+<b>Launch requirements</b>
+<span>Complete the narrative, token, allocation, liquidity and disclosure terms before publishing.</span>
+</div>
+</div>
+</section>
+<section class='launch-workspace'>
+<div class='wrap launch-layout'>
+<aside class='launch-steps'>
+<small>LAUNCH CHECKLIST</small>
+<button class='active' data-step-target='1'>
+<i>1</i>
+<span>
+<b>Narrative</b>
+<em>What the community is about</em>
+</span>
+</button>
+<button data-step-target='2'>
+<i>2</i>
+<span>
+<b>Token</b>
+<em>Name, symbol and supply</em>
+</span>
+</button>
+<button data-step-target='3'>
+<i>3</i>
+<span>
+<b>Allocation</b>
+<em>Who receives what</em>
+</span>
+</button>
+<button data-step-target='4'>
+<i>4</i>
+<span>
+<b>Liquidity</b>
+<em>Market setup and conditions</em>
+</span>
+</button>
+<button data-step-target='5'>
+<i>5</i>
+<span>
+<b>Disclosures</b>
+<em>Risks and final review</em>
+</span>
+</button>
+</aside>
+<form class='launch-form' id='launch-form'>
+<div class='form-step active' data-step='1'>
+<div class='form-head'>
+<span>STEP 01 / 05</span>
+<h2>Define the narrative.</h2>
+<p>Explain what brings this community together without implying ownership of or affiliation with another company.</p>
+</div>
+<label>Mine name <input name='mineName' placeholder='e.g. a clear community name' maxlength='48'>
+</label>
+<label>Market narrative <textarea name='narrative' placeholder='Describe the idea, sector or technology the community is following.' maxlength='400'>
+</textarea>
+<small>
+<b data-count='narrative'>0</b> / 400</small>
+</label>
+<div class='field-row'>
+<label>Category / category<input name='category' placeholder='Technology, energy, culture...'>
+</label>
+<label>Creator display name<input name='creator' placeholder='Name shown publicly'>
+</label>
+</div>
+</div>
+<div class='form-step' data-step='2'>
+<div class='form-head'>
+<span>STEP 02 / 05</span>
+<h2>Configure the token.</h2>
+<p>Set the token terms that participants will review before joining the mine.</p>
+</div>
+<div class='field-row'>
+<label>Token name<input name='tokenName' placeholder='Community token name'>
+</label>
+<label>Symbol<input name='symbol' placeholder='3-8 characters' maxlength='8'>
+</label>
+</div>
+<label>Total supply<input name='supply' inputmode='numeric' placeholder='Enter the fixed supply'>
+</label>
+<div class='choice-group'>
+<span>Supply after launch</span>
+<label>
+<input type='radio' name='minting' value='fixed' checked>
+<b>Fixed forever</b>
+<small>No additional tokens can be minted.</small>
+</label>
+<label>
+<input type='radio' name='minting' value='managed'>
+<b>Managed permission</b>
+<small>Any mint authority must be disclosed.</small>
+</label>
+</div>
+</div>
+<div class='form-step' data-step='3'>
+<div class='form-head'>
+<span>STEP 03 / 05</span>
+<h2>Make allocation legible.</h2>
+<p>Show how supply is intended to be divided. Exact validation will follow the final protocol rules.</p>
+</div>
+<div class='allocation-grid'>
+<label>Community / mining<input name='communityAllocation' type='number' min='0' max='100' placeholder='%'>
+</label>
+<label>Initial liquidity<input name='liquidityAllocation' type='number' min='0' max='100' placeholder='%'>
+</label>
+<label>Creator / team<input name='teamAllocation' type='number' min='0' max='100' placeholder='%'>
+</label>
+<label>Other<input name='otherAllocation' type='number' min='0' max='100' placeholder='%'>
+</label>
+</div>
+<label>Allocation notes<textarea name='allocationNotes' placeholder='Explain vesting, lockups, recipients and any reserved supply.'>
+</textarea>
+</label>
+</div>
+<div class='form-step' data-step='4'>
+<div class='form-head'>
+<span>STEP 04 / 05</span>
+<h2>Describe the market setup.</h2>
+<p>Participants should understand how liquidity starts, who controls it and when conditions can change.</p>
+</div>
+<label>Paired asset<input name='pairedAsset' placeholder='To be defined by supported network assets'>
+</label>
+<div class='field-row'>
+<label>Liquidity source<select name='liquiditySource'>
+<option value=''>Select a model</option>
+<option>Creator funded</option>
+<option>Community funded</option>
+<option>Protocol formation</option>
+</select>
+</label>
+<label>Liquidity control<select name='liquidityControl'>
+<option value=''>Select a condition</option>
+<option>Locked</option>
+<option>Burned LP position</option>
+<option>Managed - disclosed</option>
+</select>
+</label>
+</div>
+<label>Completion / graduation condition<textarea name='graduation' placeholder='Describe the objective onchain condition that completes the mine.'>
+</textarea>
+</label>
+</div>
+<div class='form-step' data-step='5'>
+<div class='form-head'>
+<span>STEP 05 / 05</span>
+<h2>Disclose, then review.</h2>
+<p>Clear disclosures are part of the launch, not an afterthought.</p>
+</div>
+<label>Creator conflicts and holdings<textarea name='conflicts' placeholder='Disclose relevant interests, related wallets or relationships.'>
+</textarea>
+</label>
+<label>Referenced companies or assets<input name='references' placeholder='List references, or enter None'>
+</label>
+<div class='confirm-list'>
+<label>
+<input type='checkbox' name='independent'>
+<span>I understand this token is independent from any referenced company and provides no equity or shareholder rights.</span>
+</label>
+<label>
+<input type='checkbox' name='risk'>
+<span>I will present token, liquidity, smart-contract and creator risks clearly.</span>
+</label>
+<label>
+<input type='checkbox' name='accuracy'>
+<span>I confirm the submitted launch information is accurate to the best of my knowledge.</span>
+</label>
+</div>
+</div>
+<div class='form-actions'>
+<button type='button' class='btn' id='prev' disabled>Back</button>
+<span id='step-label'>Step 1 of 5</span>
+<button type='button' class='btn dark' id='next'>Continue</button>
+</div>
+</form>
+</div>
+</section>
+</main>
+<script src='wallet.js'>
+</script>
+<script src='launch.js'>
+</script>
+</body>
+</html>
